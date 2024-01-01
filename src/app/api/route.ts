@@ -1,3 +1,3 @@
 export async function POST() {
-  return Response.json("OK");
+  return new Response("OK", { status: 200 });
 }
