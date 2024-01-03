@@ -1,7 +1,6 @@
 export async function POST(request: Request) {
   console.log("POST request received");
-  console.log(request.body);
-  const data = await request.json();
+  const data = await request.text();
   console.log(data);
   // if (stream === undefined || stream === null) {
   //   return new Response("Bad Request", { status: 400 });
